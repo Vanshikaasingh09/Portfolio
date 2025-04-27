@@ -1,61 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanshika Singh - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vanshika's Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+      color: #333;
+    }
+
+    header {
+      background-color: #00695c;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #004d40;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #b2dfdb;
+    }
+
+    section {
+      background: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+      color: #00796b;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #263238;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Vanshika Singh</h1>
-        <p>Web Developer | Cloud Enthusiast | Java Programmer</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Graduate from University of Petroleum and Energy Studies, Dehradun with a passion for web development and cloud computing. Skilled in Java, HTML, CSS, JavaScript, and AWS.</p>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java, HTML, CSS, JavaScript, SQL</li>
-            <li>Docker, GitHub, VS Code, Oracle VM VirtualBox, AWS</li>
-            <li>Linux, Windows</li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>File Hider System</h3>
-            <p>Secure application to hide and unhide folders with authentication and OTP-based verification.</p>
-            <a href="https://github.com/Vanshikaasingh09/file_hider" target="_blank">GitHub Repo</a>
-        </div>
-        <div class="project">
-            <h3>AWS Three-Tier Architecture</h3>
-            <p>Designed and deployed a scalable three-tier architecture using AWS services.</p>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:vanshikaasingh0902@gmail.com">vanshikaasingh0902@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/vanshika-singh-8854872a6/" target="_blank">Vanshika Singh</a></p>
-        <p>GitHub: <a href="https://github.com/Vanshikaasingh09" target="_blank">Vanshikaasingh09</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Vanshika Singh</p>
-    </footer>
+  <header>
+    <h1>Vanshika</h1>
+    <p>B.Tech in Computer Science - Cloud Computing</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a nature-loving tech enthusiast currently pursuing a B.Tech in Computer Science (Cloud Computing). I enjoy crafting solutions with cloud platforms, building FastAPI applications, and exploring data-driven innovations.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>B.Tech in Computer Science (Cloud Computing)</p>
+    <p>Current Year: Third Year</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>Team project using Canva to design and present a cloud computing poster</li>
+      <li>NGO Internship – gained public speaking and professional development skills</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Cloud (AWS), FastAPI, Streamlit, GitHub Actions</li>
+      <li>HTML, CSS, Python, SQL</li>
+      <li>Communication, Team Collaboration</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <a href="https://titanicpredictionmodel-acydc9kfyest4eaude5pxb.streamlit.app/" target="_blank" style="color: #00796b;">
+          Titanic Prediction Model
+        </a> – Predict survival outcomes using machine learning
+      </li>
+      <li>
+        <a href="https://deliverypredictionmodel-bbqscrbnnzxayg3drq3ogc.streamlit.app/" target="_blank" style="color: #00796b;">
+          Delivery Prediction Model
+        </a> – Estimate delivery times based on logistic data
+      </li>
+      <li>
+        <a href="https://networking-ijyomjpxulqm4j3k3zrh4i.streamlit.app/" target="_blank" style="color: #00796b;">
+          Networking Simulation Tool
+        </a> – Explore dynamic network behavior and routing
+      </li>
+      <li>
+        <a href="https://volumemount-o86yfndmbr59uganu6idmj.streamlit.app/" target="_blank" style="color: #00796b;">
+          Volume Mount Demo
+        </a> – Demonstrates volume mounting in container environments
+      </li>
+    </ul>
+  </section>
+  
+  
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: vanshikaasingh0902@example.com</p>
+    <p>LinkedIn: <a href="#" style="color:#00695c;">https://github.com/Vanshikaasingh09</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vanshika | All rights reserved</p>
+  </footer>
 </body>
 </html>
